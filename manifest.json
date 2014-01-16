@@ -1,0 +1,13 @@
+{
+  "name": "GooglePlayRank",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "GooglePlayの検索結果に順位を入れる",
+  "content_scripts": [
+    {
+      "matches": ["https://play.google.com/store/search*c=apps*"],
+      "js": ["jquery.min.js","script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
